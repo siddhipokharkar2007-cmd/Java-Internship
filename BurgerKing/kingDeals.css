@@ -1,0 +1,367 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f7f3ef;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    background:#fff;
+    height:75px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    border-bottom:1px solid #ddd;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo img{
+    width:65px;
+}
+
+.menu{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#5b2c1f;
+    font-size:15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.menu a i{
+    margin-right:6px;
+}
+
+.menu a:hover{
+    color:#f5a300;
+}
+
+/* ================= HERO ================= */
+
+.top-banner{
+    background:#e7bb2c;
+    padding:35px;
+    text-align:center;
+}
+
+.top-banner h1{
+    color:white;
+    font-size:42px;
+    font-weight:900;
+    margin-bottom:20px;
+}
+
+.switch-box{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+}
+
+.switch-box button{
+    padding:12px 28px;
+    border:none;
+    border-radius:30px;
+    background:white;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.switch-box button:hover{
+    transform:translateY(-2px);
+}
+
+.switch-box .active{
+    background:#5b2c1f;
+    color:white;
+}
+
+/* ================= TOP DEALS ================= */
+
+.top-deals{
+    background:white;
+    padding:50px;
+}
+
+.top-deals h2{
+    font-size:36px;
+    margin-bottom:30px;
+    color:#2c160e;
+}
+
+.deal-wrapper{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.deal-card{
+    width:350px;
+    overflow:hidden;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.deal-card:hover{
+    transform:translateY(-5px);
+}
+
+.deal-card img{
+    width:100%;
+    display:block;
+}
+
+/* ================= LIMITED DEALS ================= */
+
+.limited{
+    background:#ddb185;
+    padding:60px;
+    min-height:250px;
+}
+
+.limited h2{
+    font-size:36px;
+    margin-bottom:25px;
+    color:#2c160e;
+}
+
+.tabs{
+    display:flex;
+    gap:15px;
+    margin-bottom:70px;
+}
+
+.tabs button{
+    padding:10px 25px;
+    border:none;
+    border-radius:25px;
+    cursor:pointer;
+    background:#fff;
+}
+
+.tab-active{
+    background:#5b2c1f !important;
+    color:white;
+    font-weight:bold;
+}
+
+.empty{
+    text-align:center;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* ================= CROWN ================= */
+
+.crown-icon{
+    width:55px;
+    height:55px;
+    background:#5b2c1f;
+    color:white;
+    margin:25px auto;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:10px;
+}
+
+.crown-icon i{
+    font-size:24px;
+}
+
+/* ================= LOYALTY ================= */
+
+.loyalty{
+    width:95%;
+    margin:auto;
+    margin-bottom:50px;
+}
+
+.title{
+    background:#f0b400;
+    text-align:center;
+    padding:15px;
+    font-size:50px;
+    font-weight:900;
+    color:#3a170d;
+}
+
+.loyalty-row{
+    display:flex;
+}
+
+.box{
+    flex:1;
+    height:320px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+}
+
+.box h3{
+    font-size:30px;
+    line-height:1.4;
+    margin-bottom:20px;
+}
+
+.box i{
+    font-size:90px;
+}
+
+.blue{
+    background:#00a6e7;
+}
+
+.purple{
+    background:#c018c4;
+}
+
+.brown{
+    background:#8c4a2f;
+}
+
+/* ================= FOOTER ================= */
+
+.bk-footer{
+    background:#2f2f2f;
+    color:white;
+    padding-top:45px;
+}
+
+.footer-container{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:30px;
+    padding:0 20px;
+}
+
+.footer-col{
+    display:flex;
+    flex-direction:column;
+}
+
+.footer-col h4{
+    margin-bottom:15px;
+    font-size:15px;
+    font-weight:700;
+}
+
+.footer-col a{
+    color:#d0d0d0;
+    text-decoration:none;
+    margin-bottom:10px;
+    font-size:13px;
+    transition:0.3s;
+}
+
+.footer-col a:hover{
+    color:#f5b800;
+}
+
+.app-buttons{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.app-buttons img{
+    width:150px;
+    background:white;
+    border-radius:8px;
+}
+
+.footer-bottom{
+    text-align:center;
+    border-top:1px solid #444;
+    margin-top:30px;
+    padding:15px;
+    font-size:12px;
+    color:#ccc;
+}
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
+        gap:15px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .top-banner h1{
+        font-size:30px;
+    }
+
+    .top-deals{
+        padding:20px;
+    }
+
+    .limited{
+        padding:20px;
+    }
+
+    .deal-card{
+        width:100%;
+    }
+
+    .loyalty-row{
+        flex-direction:column;
+    }
+
+    .title{
+        font-size:28px;
+    }
+
+    .box{
+        height:250px;
+    }
+
+    .box h3{
+        font-size:22px;
+    }
+
+    .box i{
+        font-size:70px;
+    }
+
+    .footer-container{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .app-buttons{
+        align-items:center;
+    }
+}

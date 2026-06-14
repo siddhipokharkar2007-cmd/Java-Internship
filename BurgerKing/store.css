@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:#f5f1e8;
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar{
+    height:80px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 40px;
+    border-bottom:1px solid #e5e5e5;
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+.logo img{
+    width:65px;
+}
+
+.location-box{
+    background:#f8f8f8;
+    padding:12px 20px;
+    border-radius:30px;
+    border:1px solid #ddd;
+    color:#502314;
+    font-weight:600;
+}
+
+.location-box i{
+    margin-right:8px;
+    color:#d62300;
+}
+
+.menu{
+    display:flex;
+    gap:25px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#502314;
+    font-weight:600;
+    transition:.3s;
+}
+
+.menu a:hover{
+    color:#d62300;
+}
+
+.menu i{
+    margin-right:5px;
+}
+
+/* ================= SEARCH ================= */
+
+.search-section{
+    text-align:center;
+    padding:40px 20px;
+}
+
+.search-section h1{
+    color:#502314;
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+.search-bar{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    border-radius:50px;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.search-bar i{
+    padding-left:20px;
+    color:#999;
+}
+
+.search-bar input{
+    flex:1;
+    border:none;
+    outline:none;
+    padding:18px;
+    font-size:16px;
+}
+
+.search-bar button{
+    border:none;
+    background:#d62300;
+    color:#fff;
+    padding:18px 25px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.search-bar button:hover{
+    background:#b81e00;
+}
+
+/* ================= STORES ================= */
+
+.stores{
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.store-card{
+    background:#fff;
+    border-radius:15px;
+    padding:25px;
+    margin-bottom:25px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.store-card:hover{
+    transform:translateY(-5px);
+}
+
+.store-left h2{
+    color:#502314;
+    margin-bottom:10px;
+}
+
+.timing{
+    color:#777;
+    margin-bottom:10px;
+}
+
+.address{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:10px;
+}
+
+.status{
+    color:green;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.distance{
+    color:#d62300;
+    font-weight:600;
+}
+
+.store-right{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.store-right button{
+    width:55px;
+    height:55px;
+    border:none;
+    border-radius:50%;
+    background:#502314;
+    color:#fff;
+    font-size:18px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.store-right button:hover{
+    background:#d62300;
+    transform:scale(1.1);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:15px;
+        gap:15px;
+    }
+
+    .menu{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .search-section h1{
+        font-size:28px;
+    }
+
+    .search-bar{
+        flex-direction:column;
+        border-radius:15px;
+    }
+
+    .search-bar i{
+        display:none;
+    }
+
+    .search-bar input{
+        width:100%;
+    }
+
+    .search-bar button{
+        width:100%;
+    }
+
+    .store-card{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:20px;
+    }
+
+    .store-right{
+        flex-direction:row;
+    }
+}
